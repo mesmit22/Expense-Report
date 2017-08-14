@@ -46,7 +46,7 @@ namespace ExpenseReport.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "AddressID,StreetNumber,StreetName,City,State,ZipCode")] Address address)
+        public ActionResult Create([Bind(Include = "Street,City,State,ZipCode")] Address address)
         {
             if (ModelState.IsValid)
             {
